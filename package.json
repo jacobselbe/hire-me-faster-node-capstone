@@ -1,14 +1,17 @@
 {
   "name": "hire-me-faster-node-capstone",
   "version": "1.0.0",
-  "description": "job application management tool",
+  "description": "Hire Me Faster (HMF) is a job application management tool to streamline the getting hired process",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --exit"
   },
   "author": "Jacob Selbe",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "express": "^4.16.4",
+    "mocha": "^5.2.0"
   }
 }
