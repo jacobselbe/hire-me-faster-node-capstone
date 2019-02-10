@@ -13,13 +13,58 @@
     <body>
         <img src="https://cdn2.f-cdn.com/contestentries/1060708/16064881/5953872c7c4f4_thumb900.jpg" alt="A man getting hired through hiremefaster.com">
         <section class="log-in-box">
-            <form action="">
-                
+            <form id="loginForm">
+                <fieldset name="login">
+                    <label for="login-username">Username</label>
+                        <input id="loginUsername" type="text">
+                    <label for="login-password">Password</label>
+                        <input id="loginPassword" type="password">
+                    <button type="submit">Log In</button>
+                </fieldset>
+            </form>
+            <form id="signupForm">
+                <fieldset name="signup">
+                    <label for="signupUsername">Username</label>
+                        <input id="signup-username" type="text">
+                    <label for="signupPassword">Password</label>
+                        <input id="signupPassword" type="password">
+                    <label for="signupPasswordConfirm">Confirm Password</label>
+                        <input id="signupPasswordConfirm" type="password">
+                    <button type="submit">Sign Up</button>
+                </fieldset>
             </form>
         </section>
         <section class="site-features">
             <h2>Site Features</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sapiente repellat voluptatem aliquid repellendus quam quidem non optio at id accusamus rem ab explicabo molestias facere quo, quae a. Aut voluptate, possimus voluptatem illo veritatis laudantium quos praesentium? Veniam sit voluptatem odit, ipsa voluptatibus atque eius nam facilis eos, consectetur commodi, eaque laudantium adipisci? Accusamus fuga temporibus possimus, perferendis nihil doloremque laboriosam.</p>
+        </section>
+        <header role="banner">
+            <h1>Hire Me Faster | Dashboard</h1>
+        </header>
+        <section class="task-list">
+            <ul>
+                <li><button>task</button></li>
+                <li><button>task</button></li>
+                <li><button>task</button></li>
+                <li><button>task</button></li>
+                <li><button>task</button></li>
+            </ul>
+        </section>
+        <section class="task-box">
+            <form id="taskForm">
+                <fieldset name="task">
+                    <label for="taskType">Task Type</label>
+                        <input id="taskType" type="text">
+                    <label for="taskTitle">Task Title</label>
+                        <input id="taskTitle" type="text">
+                    <label for="additionalInfo">Additional Info</label>
+                        <input id="additionalInfo" type="text">
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+        <section class="stats">
+            <h2>Display Stats...</h2>
         </section>
     </body>
     <script src="main.js"></script>
