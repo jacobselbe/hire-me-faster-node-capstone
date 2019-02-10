@@ -6,7 +6,7 @@ to be completed, pending applications to follow up with, email response monitori
 
 ### Working Prototype
 
-View working prototype here: [job-search-crm-node-capstone](http://frozen-fortress-22482.herokuapp.com/) 
+View working prototype here: [job-search-crm-node-capstone](https://job-search-crm.herokuapp.com/)
 
 
 ## Site Map: MVP
@@ -47,15 +47,18 @@ In progress...
 
 ## Technical
 
+###Frontend
 * HTML5
 * CSS3
 * JavaScript 
 * jQuery
+* RESTful APIs
+* Express
+
+###Backend
 * Node.js
 * NPM
-* Express
 * Heroku
-* RESTful APIs
 * Mocha
 * Chai
 * Chai-HTTP
