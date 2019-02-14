@@ -6,79 +6,105 @@
         <title>Hire Me Faster</title>
         <meta name="description" content="Hire Me Faster is a job application management tool to streamline the getting hired process.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="grid.css">
         <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
         <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous"></script>
     </head>
     <body>
-        <section class="row">
-            <img src="https://cdn2.f-cdn.com/contestentries/1060708/16064881/5953872c7c4f4_thumb900.jpg" alt="A man getting hired through hiremefaster.com" class="col-3">
-            <div class="log-in-box" class="col-3">
-                <form id="loginForm">
-                    <fieldset name="login">
-                        <label for="login-username">Username</label>
-                        <input id="loginUsername" type="text">
-                        <label for="login-password">Password</label>
-                        <input id="loginPassword" type="password">
-                        <button type="submit">Log In</button>
+        <!-- Landing Page -->
+        <header role="banner">
+            <h1>Hire Me Faster</h1>
+        </header>
+        <section class="signup-section row">
+            <img src="https://visme.co/blog/wp-content/uploads/2016/09/website4-1024x512.jpg" alt="Hire Me Faster" class="logo col-66">
+            <div class="signup-login-box col-33">
+                <form id="signupForm" class="signup-form hidden">
+                    <fieldset name="signup-fieldset">
+                        <legend>Sign up for Hire Me Faster</legend>
+                        <label for="signupUsername">Username</label>
+                        <input id="signupUsername" type="text" required>
+                        
+                        <label for="signupPassword">Password</label>
+                        <input id="signupPassword" type="password" required>
+                        
+                        <label for="signupPasswordConfirm">Confirm Password</label>
+                        <input id="signupPasswordConfirm" type="password" required>
+                        
+                        <button type="submit">Get Started</button>
                     </fieldset>
                 </form>
-            </div>
-            <div class="col-3">
-                <form id="signupForm">
-                    <fieldset name="signup">
-                        <label for="signupUsername">Username</label>
-                        <input id="signup-username" type="text">
-                        <label for="signupPassword">Password</label>
-                        <input id="signupPassword" type="password">
-                        <label for="signupPasswordConfirm">Confirm Password</label>
-                        <input id="signupPasswordConfirm" type="password">
-                        <button type="submit">Sign Up</button>
+                <form id="signInForm" class="sign-in-form">
+                    <fieldset name="sign-in-fieldset">
+                        <legend>Sign in to Hire Me Faster</legend>
+                        <label for="signInUsername">Username</label>
+                        <input id="signInUsername" type="text" required>
+                        
+                        <label for="signInPassword">Password</label>
+                        <input id="signInPassword" type="password" required>
+                        
+                        <button type="submit">Sign In</button>
                     </fieldset>
                 </form>
             </div>
         </section>
-        <section class="row">
-            <div class="site-features">
-                <h2>Site Features</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sapiente repellat voluptatem aliquid
-                    repellendus quam quidem non optio at id accusamus rem ab explicabo molestias facere quo, quae a. Aut voluptate,
-                    possimus voluptatem illo veritatis laudantium quos praesentium? Veniam sit voluptatem odit, ipsa voluptatibus
-                    atque eius nam facilis eos, consectetur commodi, eaque laudantium adipisci? Accusamus fuga temporibus possimus,
-                    perferendis nihil doloremque laboriosam.</p>
+        <section class="site-features-section row">
+            <div class="site-features col-100">
+                <p>Site Features... Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nostrum eum tempora repudiandae sunt. Animi, nobis modi aliquid ipsam facilis veniam exercitationem odio molestiae perferendis est totam quasi velit eum expedita maiores at quia atque qui nostrum et vero. Labore, fugiat laborum. Aperiam sed sit dolor sunt porro quas excepturi tenetur, reprehenderit, cum nulla obcaecati eum autem delectus incidunt exercitationem?</p>
             </div>
         </section>
         <!-- Dashboard Page -->
         <header role="banner">
             <h1>Hire Me Faster | Dashboard</h1>
         </header>
-        <section class="row">
-            <div class="task-list">
+        <section class="task-section row">
+            <div class="task-list col-20">
+                <h2>Today's Tasks</h2>
                 <ul>
-                    <li><button>task</button></li>
-                    <li><button>task</button></li>
-                    <li><button>task</button></li>
-                    <li><button>task</button></li>
-                    <li><button>task</button></li>
+                    <!-- list items generated by main.js -->
+                    <!-- placeholder list items to be removed -->
+                    <li><button>Log new job application</button></li>
+                    <li><button>Log new job application</button></li>
+                    <li><button>Log new job application</button></li>
+                    <li><button>Log new job application</button></li>
+                    <li><button>Log new job application</button></li>
+                    <li><button>Log new job application</button></li>
+                    <li><button>Log new job application</button></li>
+                    <li><button>Log new job application</button></li>
+                    <li><button>Log new job application</button></li>
+                    <li><button>Log new job application</button></li>
+                    <li><button>Send follow up email</button></li>
+                    <li><button>Send follow up email</button></li>
+                    <li><button>Send follow up email</button></li>
+                    <li><button>Send follow up email</button></li>
+                    <li><button>Send follow up email</button></li>
+                    <li><button>Send follow up email</button></li>
+                    <li><button>Send follow up email</button></li>
+                    <li><button>Send follow up email</button></li>
+                    <li><button>Send follow up email</button></li>
+                    <li><button>Send follow up email</button></li>
                 </ul>
             </div>
-            <div class="task-box">
+            <div class="task-box col-80">
                 <form id="taskForm">
                     <fieldset name="task">
-                        <label for="taskType">Task Type</label>
-                        <input id="taskType" type="text">
+                        <legend><h2>Task Log</h2></legend>
                         <label for="taskTitle">Task Title</label>
                         <input id="taskTitle" type="text">
+                        
                         <label for="additionalInfo">Additional Info</label>
-                        <input id="additionalInfo" type="text">
+                        <textarea name="task-description" id="additionalInfo"></textarea>
+                        
                         <button type="submit">Submit</button>
                     </fieldset>
                 </form>
             </div>
         </section>
-        <section class="row">
-            <div class="stats">
-                <h2>Display Stats...</h2>
+        <section class="stats-section row">
+            <div class="stats col-100">
+                <h2>Stats (placeholder image below to be removed)</h2>
+                <img src="http://images.algebraden.com/graphs/double-bar-graph.jpg" alt="Graph of your weekly activity." width="100%" height="300px">
             </div>
         </section>
     </body>
