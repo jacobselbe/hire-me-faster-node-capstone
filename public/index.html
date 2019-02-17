@@ -14,79 +14,89 @@
     </head>
     <body>
         <!-- Landing Page -->
-        <header role="banner">
-            <h1>Hire Me Faster</h1>
-        </header>
-        <section class="signup-section row">
-            <img src="https://visme.co/blog/wp-content/uploads/2016/09/website4-1024x512.jpg" alt="Hire Me Faster" class="logo col-66">
-            <div class="signup-login-box col-33">
-                <form id="signupForm" class="signup-form hidden">
-                    <fieldset name="signup-fieldset">
-                        <legend>Sign up for Hire Me Faster</legend>
-                        <label for="signupUsername">Username</label>
-                        <input id="signupUsername" type="text" required>
-                        
-                        <label for="signupPassword">Password</label>
-                        <input id="signupPassword" type="password" required>
-                        
-                        <label for="signupPasswordConfirm">Confirm Password</label>
-                        <input id="signupPasswordConfirm" type="password" required>
-                        
-                        <button type="submit">Get Started</button>
-                    </fieldset>
-                </form>
-                <form id="signInForm" class="sign-in-form">
-                    <fieldset name="sign-in-fieldset">
-                        <legend>Sign in to Hire Me Faster</legend>
-                        <label for="signInUsername">Username</label>
-                        <input id="signInUsername" type="text" required>
-                        
-                        <label for="signInPassword">Password</label>
-                        <input id="signInPassword" type="password" required>
-                        
-                        <button type="submit">Sign In</button>
-                    </fieldset>
-                </form>
-            </div>
-        </section>
-        <section class="site-features-section row">
-            <div class="site-features col-100">
-                <p>Site Features... Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nostrum eum tempora repudiandae sunt. Animi, nobis modi aliquid ipsam facilis veniam exercitationem odio molestiae perferendis est totam quasi velit eum expedita maiores at quia atque qui nostrum et vero. Labore, fugiat laborum. Aperiam sed sit dolor sunt porro quas excepturi tenetur, reprehenderit, cum nulla obcaecati eum autem delectus incidunt exercitationem?</p>
-            </div>
-        </section>
+        <main role="main" id="landingPage" class="hidden">
+            <section class="signup-login-section row">
+                <!-- placeholder img -->
+                <!-- swap for custom img of getting hired with logo and tagline -->
+                <img src="https://visme.co/blog/wp-content/uploads/2016/09/website4-1024x512.jpg" alt="Hire Me Faster"
+                    class="landing-img col-66">
+                <div class="signup-login-box col-33">
+                    <div class="form-switch-box row">
+                        <button id="signupSwitch" class="col-50 switch-selected">Sign up</button>
+                        <button id="loginSwitch" class="col-50">Log in</button>
+                    </div>
+                    <form id="signupForm" class="signup-form">
+                        <fieldset name="signup-fieldset">
+                            <legend>Get hired faster</legend>
+                            <label for="signupUsername">
+                                <input id="signupUsername" type="text" placeholder="Username" required>
+                            </label>
+
+                            <label for="signupPassword">
+                                <input id="signupPassword" type="password" placeholder="Password" required>
+                            </label>
+            
+                            <label for="signupPasswordConfirm">
+                                <input id="signupPasswordConfirm" type="password" placeholder="Confirm password" required>
+                            </label>
+            
+                            <button type="submit">Sign up</button>
+                        </fieldset>
+                    </form>
+                    <form id="loginForm" class="login-form hidden">
+                        <fieldset name="login-fieldset">
+                            <legend>Welcome back</legend>
+                            <label for="loginUsername">
+                                <input id="loginUsername" type="text" placeholder="Username" required>
+                            </label>
+            
+                            <label for="loginPassword">
+                                <input id="loginPassword" type="password" placeholder="Password" required>
+                            </label>
+            
+                            <button type="submit">Log in</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+            <section class="site-features-section row">
+                <div class="site-features col-100">
+                    <p>Features... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde quis, officia omnis quidem quos excepturi neque laboriosam doloremque quia. Vitae earum ea similique ex expedita sunt unde sint, ut itaque tempore in asperiores tempora. Autem magnam dolores laborum nulla facere sit fugit nisi! Dignissimos, quis similique alias ut aut repellat.</p>
+                </div>
+            </section>
+        </main>
         <!-- Dashboard Page -->
-        <header role="banner">
-            <h1>Hire Me Faster | Dashboard</h1>
-        </header>
-        <section class="task-section row">
-            <div class="task-list col-20">
-                <h2>Today's Tasks</h2>
-                <ul>
-                    <!-- list items generated by main.js -->
-                    <!-- placeholder list items to be removed -->
-                    <li><button>Log new job application</button></li>
-                    <li><button>Log new job application</button></li>
-                    <li><button>Log new job application</button></li>
-                    <li><button>Log new job application</button></li>
-                    <li><button>Log new job application</button></li>
-                    <li><button>Log new job application</button></li>
-                    <li><button>Log new job application</button></li>
-                    <li><button>Log new job application</button></li>
-                    <li><button>Log new job application</button></li>
-                    <li><button>Log new job application</button></li>
-                    <li><button>Send follow up email</button></li>
-                    <li><button>Send follow up email</button></li>
-                    <li><button>Send follow up email</button></li>
-                    <li><button>Send follow up email</button></li>
-                    <li><button>Send follow up email</button></li>
-                    <li><button>Send follow up email</button></li>
-                    <li><button>Send follow up email</button></li>
-                    <li><button>Send follow up email</button></li>
-                    <li><button>Send follow up email</button></li>
-                    <li><button>Send follow up email</button></li>
-                </ul>
-            </div>
-            <div class="task-box col-80">
+        <main role="main" id="dashboardPage" class="row">
+            <section id="taskListContainer" class="col-20">
+                <div class="task-list col-20">
+                    <h2>Today's Tasks</h2>
+                    <ul>
+                        <!-- list items generated by main.js -->
+                        <!-- placeholder list items to be removed -->
+                        <li><button>Log new job application</button></li>
+                        <li><button>Log new job application</button></li>
+                        <li><button>Log new job application</button></li>
+                        <li><button>Log new job application</button></li>
+                        <li><button>Log new job application</button></li>
+                        <li><button>Log new job application</button></li>
+                        <li><button>Log new job application</button></li>
+                        <li><button>Log new job application</button></li>
+                        <li><button>Log new job application</button></li>
+                        <li><button>Log new job application</button></li>
+                        <li><button>Send follow up email</button></li>
+                        <li><button>Send follow up email</button></li>
+                        <li><button>Send follow up email</button></li>
+                        <li><button>Send follow up email</button></li>
+                        <li><button>Send follow up email</button></li>
+                        <li><button>Send follow up email</button></li>
+                        <li><button>Send follow up email</button></li>
+                        <li><button>Send follow up email</button></li>
+                        <li><button>Send follow up email</button></li>
+                        <li><button>Send follow up email</button></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="task-box col-80">
                 <form id="taskForm">
                     <fieldset name="task">
                         <legend><h2>Task Log</h2></legend>
@@ -99,14 +109,13 @@
                         <button type="submit">Submit</button>
                     </fieldset>
                 </form>
-            </div>
-        </section>
-        <section class="stats-section row">
-            <div class="stats col-100">
+            </section>
+            <section class="stats-box col-80 hidden">
                 <h2>Stats (placeholder image below to be removed)</h2>
-                <img src="http://images.algebraden.com/graphs/double-bar-graph.jpg" alt="Graph of your weekly activity." width="100%" height="300px">
-            </div>
-        </section>
+                <img src="http://images.algebraden.com/graphs/double-bar-graph.jpg" alt="Graph of your weekly activity."
+                    width="100%" height="300px">
+            </section>
+        </main>
     </body>
-    <script src="main.js"></script>
+    <script src="client.js"></script>
 </html>
