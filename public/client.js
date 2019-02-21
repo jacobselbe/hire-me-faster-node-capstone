@@ -109,7 +109,7 @@ function postNewUser(username, password) {
     //post new user to db
 }
 
-function getUserData(auth) {
+function getUserData() {
     //get user data with authentication
     //return ??
 }
