@@ -129,6 +129,7 @@ li.task-list:hover {
 li.active-tab {
     background-color: #074b8f;
     border: 1px solid #05386b;
+    border-bottom: 1px solid white;
 }
 
 li.task-list {

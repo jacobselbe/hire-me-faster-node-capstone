@@ -28,15 +28,6 @@ function watchFormSwitch() {
     });
 }
 
-function confirmPassword(input) {
-    if (input.value !== document.getElementById('password').value) {
-        input.setCustomValidity('Password Must be Matching.');
-    } else {
-        // input is valid -- reset the error message
-        input.setCustomValidity('');
-    }
-}
-
 function watchSignupForm() {
     $('#signupForm').submit(e => {
         e.preventDefault();
@@ -45,15 +36,25 @@ function watchSignupForm() {
         const passwordConfirm = $('#signupPasswordConfirm').val();
         password !== passwordConfirm ?
             alert('Passwords do not match') :
-            (postNewUser(username, password), showDashPage(auth));
+            (postNewUser(username, password), showDashPage());
     });
 }
 
 function watchLoginForm() {
-    $();
+    $('#loginForm').submit(e => {
+        e.preventDefault();
+        const username = $('#signupUsername').val();
+        const password = $('#signupPassword').val();
+        //make api call to check if user exist
+            //if not display error
+            //if user exists...
+            showDashPage();
+    });
 }
 
-function showDashPage(auth) {
+
+//need authentication
+function showDashPage() {
     $('#landingPage').addClass('hidden');
     $('#dashboardPage').removeClass('hidden');
     $('#tasks').removeClass('active-tab');
@@ -65,13 +66,43 @@ function showDashPage(auth) {
     $('#emailBox').addClass('hidden');
     $('#statskBox').addClass('hidden');
     $('#dashboardBox').removeClass('hidden');
-    getUserData(auth);
-    //.then display specifically to dashboard??
+    // getUserData(auth);
+        //.then display specifically to dashboard??
     watchTabSwitch();
 }
 
 function watchTabSwitch() {
-    $('#')
+    const tabs = [$('#dashboard'), $('#tasks'), $('#email'), $('#stats')];
+    const boxes = [$('#taskList'), $('#dashboardBox'), $('#taskBox'), $('#emailBox'), $('#statsBox')];
+
+    $('#dashboard').click(e => {
+        tabs.map(tab => tab.removeClass('active-tab'));
+        boxes.map(box => box.addClass('hidden'));
+        $('#dashboard').addClass('active-tab');    
+        $('#dashboardBox').removeClass('hidden');
+    });
+
+    $('#tasks').click(e => {
+        tabs.map(tab => tab.removeClass('active-tab'));
+        boxes.map(box => box.addClass('hidden'));
+        $('#tasks').addClass('active-tab');
+        $('#taskBox').removeClass('hidden');
+        $('#taskList').removeClass('hidden');
+    });
+
+    $('#email').click(e => {
+        tabs.map(tab => tab.removeClass('active-tab'));
+        boxes.map(box => box.addClass('hidden'));
+        $('#email').addClass('active-tab');
+        $('#emailBox').removeClass('hidden');
+    });
+
+    $('#stats').click(e => {
+        tabs.map(tab => tab.removeClass('active-tab'));
+        boxes.map(box => box.addClass('hidden'));
+        $('#stats').addClass('active-tab');
+        $('#statsBox').removeClass('hidden');
+    });
 }
 
 function postNewUser(username, password) {
