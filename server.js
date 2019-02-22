@@ -8,10 +8,11 @@ mongoose.Promise = global.Promise;
 const { DATABASE_URL, PORT } = require('./config');
 const { User } = require('./models');
 
+
 const app = express();
 
 app.use(morgan('common'));
-app.use(express.json());
+app.use(express.static('public'));
 
 app.get('/users', (req, res) => {
     User

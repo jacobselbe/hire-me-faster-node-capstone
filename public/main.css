@@ -3,6 +3,18 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+}
+
 li {
     list-style: none;
 }
@@ -11,42 +23,69 @@ li {
     display: none;
 }
 
-.landing-img {
-    margin-top: 13px;
+.signup-login-section {
+    width: 100%;
+    height: 70%;
 }
 
-.form-switch-box {
+.landing-img {
+    height: 100%;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+        url(job-collab.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    text-shadow: 6px 6px 15px black;
+    font-size: 130px;
+    text-align: center;
+    margin-top: 20%;
+}
+
+/* .form-switch-box {
     padding: 14px;
-    margin-bottom: 5px;
+} */
+
+.signup-login-box {
+    height: 100%;
+    padding: 20px;
+    background-color: #383544;
 }
 
 .form-switch-box button {
     border: none;
-    background-color: #edf5e1;
-    color: #05386b;
+    background-color: #c8c8c7;
+    color: #232d36;
     font-size: 20px;
     padding: 10px;
 }
 
 .form-switch-box button:hover {
-    background-color: #8ee4af;
+    background-color: #7a8385;
+    filter: brightness(125%);
 }
 
-button.switch-selected:hover {
+/* button.switch-selected:hover {
     filter: brightness(100%);
-}
+} */
 
 .form-switch-box button.switch-selected {
-    background-color: #05386b;
-    color: white;
+    background-color: #7a8385;
+    color: #232d36;
 }
 
-.signup-login-section, .site-features-section {
+/* .signup-login-section, .site-features-section {
     max-width: 1200px;
-}
+} */
 
-.signup-login-section {
-    margin-top: 80px;
+.signup-login-box fieldset {
+    margin: 0;
+    padding: 0;
 }
 
 .signup-login-box legend {
@@ -56,8 +95,8 @@ button.switch-selected:hover {
     padding: 15px;
     margin-bottom: 15px;
     width: 100%;
-    background-color: #8ee4af;
-    color: #05386b;
+    background-color: #c8c8c7;
+    color: #232d36;
 }
 
 .signup-login-section fieldset {
@@ -66,8 +105,8 @@ button.switch-selected:hover {
 
 .signup-login-box input {
     border: none;
-    background-color: #edf5e1;
-    color: #05386b;
+    background-color: #c8c8c7;
+    color: #232d36;
     width: 100%;
     margin-bottom: 10px;
     padding: 10px;
@@ -75,10 +114,14 @@ button.switch-selected:hover {
     font-size: 18px;
 }
 
+::placeholder {
+    color: #232d36;
+}
+
 .signup-login-box fieldset button {
     border: none;
-    background-color: #05386b;
-    color: white;
+    background-color: #7a8385;
+    color: #232d36;
     display: block;
     width: 100%;
     font-size: 20px;
@@ -90,22 +133,30 @@ button[type="submit"]:hover {
     filter: brightness(125%);
 }
 
+.site-features-section {
+    height: 30%;
+}
+
 .site-features {
+    height: 100%;
     font-weight: bold;
     font-size: 25px;
-    color: #05386b;
-    background-color: #edf5e1;
+    color: white;
+    background-color: #383544;
+    padding-left: 5%;
+    padding-right: 5%;
+    line-height: 150%;
 }
 
 .side-menu {
-    background-color: #05386b;
+    background-color: #383544;
     color: white;
     float: left;
     width: 20%;
-    position: absolute;
+    /* position: absolute;
     top: 0;
     left: 0;
-    bottom: 0;
+    bottom: 0; */
     padding-right: 1%;
 }
 
@@ -196,4 +247,23 @@ li.task-list {
     padding: 6px;
     margin-top: 15px;
     margin-top: 32px;
+}
+
+/* footer {
+
+} */
+
+@media only screen and (max-width: 640px) {
+    .signup-login-section {
+        height: 50%;
+    }
+
+    h1 {
+        font-size: 50px;
+        margin-top: 40%;
+    }
+
+    .signup-login-box {
+        height: auto;
+    }
 }
