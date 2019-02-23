@@ -15,120 +15,120 @@
     </head>
     <body>
         <!-- Landing Page -->
-        <main role="main" id="landingPage" class="">
-            <section class="signup-login-section row">
-                <div class="landing-img col-66">
-                    <h1>Hire Me Faster</h1>
-                </div>
-                <div class="signup-login-box col-33">
-                    <div class="form-switch-box row">
-                        <button id="signupSwitch" class="col-50 switch-selected">Sign up</button>
-                        <button id="loginSwitch" class="col-50">Log in</button>
-                    </div>
-                    <form id="signupForm" class="signup-form">
-                        <fieldset name="signup-fieldset">
-                            <legend>Get hired faster</legend>
-                            <label for="signupUsername">
-                                <input id="signupUsername" type="text" placeholder="Username" pattern="[a-z0-9]+" maxlength="15" oninvalid="this.setCustomValidity('Uppercase letters, spaces, and symbols are invalid.')" oninput="this.setCustomValidity('')" required>
-                            </label>
+        <main role="main" id="landingPage" class="row">
+            <div class="landing-img col-60">
+                <h1>Hire Me Faster</h1>
+            </div>
+            <div class="signup-login-box col-40">
+                <form id="signupForm" class="signup-form">
+                    <fieldset name="signup-fieldset">
+                        <legend>Get Hired Faster</legend>
+                        <label for="signupUsername">
+                            <input id="signupUsername" type="text" placeholder="Username" pattern="[a-z0-9]+" maxlength="15" oninvalid="this.setCustomValidity('Uppercase letters, spaces, and symbols are invalid.')" oninput="this.setCustomValidity('')" required>
+                        </label>
 
-                            <label for="signupPassword">
-                                <input id="signupPassword" type="password" placeholder="Password" pattern="[a-z0-9]+" maxlength="15" oninvalid="this.setCustomValidity('Uppercase letters, spaces, and symbols are invalid.')" oninput="this.setCustomValidity('')" required>
-                            </label>
-            
-                            <label for="signupPasswordConfirm">
-                                <input id="signupPasswordConfirm" type="password" placeholder="Confirm password" pattern="[a-z0-9]+" maxlength="15" required>
-                            </label>
-            
-                            <button type="submit">Sign up</button>
-                        </fieldset>
-                    </form>
-                    <form id="loginForm" class="login-form hidden">
-                        <fieldset name="login-fieldset">
-                            <legend>Welcome back</legend>
-                            <label for="loginUsername">
-                                <input id="loginUsername" type="text" placeholder="Username" pattern="[a-z0-9]+" maxlength="15" oninvalid="this.setCustomValidity('Uppercase letters, spaces, and symbols are invalid.')" oninput="this.setCustomValidity('')" required>
-                            </label>
-            
-                            <label for="loginPassword">
-                                <input id="loginPassword" type="password" placeholder="Password" pattern="[a-z0-9]+" maxlength="15" oninvalid="this.setCustomValidity('Uppercase letters, spaces, and symbols are invalid.')" oninput="this.setCustomValidity('')" required>
-                            </label>
-            
-                            <button type="submit">Log in</button>
-                        </fieldset>
-                    </form>
+                        <label for="signupPassword">
+                            <input id="signupPassword" type="password" placeholder="Password" pattern="[a-z0-9]+" maxlength="15" oninvalid="this.setCustomValidity('Uppercase letters, spaces, and symbols are invalid.')" oninput="this.setCustomValidity('')" required>
+                        </label>
+        
+                        <label for="signupPasswordConfirm">
+                            <input id="signupPasswordConfirm" type="password" placeholder="Confirm password" pattern="[a-z0-9]+" maxlength="15" required>
+                        </label>
+        
+                        <div class="signup-login-buttons">
+                            <button type="submit" class="signup-btn col-50 switch-selected">Sign up</button>
+                            <button id="loginSwitch" class="login-btn col-50">Log in</button>
+                        </div>
+                    </fieldset>
+                </form>
+                <form id="loginForm" class="login-form hidden">
+                    <fieldset name="login-fieldset">
+                        <legend>Welcome Back</legend>
+                        <label for="loginUsername">
+                            <input id="loginUsername" type="text" placeholder="Username" pattern="[a-z0-9]+" maxlength="15" oninvalid="this.setCustomValidity('Uppercase letters, spaces, and symbols are invalid.')" oninput="this.setCustomValidity('')" required>
+                        </label>
+        
+                        <label for="loginPassword">
+                            <input id="loginPassword" type="password" placeholder="Password" pattern="[a-z0-9]+" maxlength="15" oninvalid="this.setCustomValidity('Uppercase letters, spaces, and symbols are invalid.')" oninput="this.setCustomValidity('')" required>
+                        </label>
+        
+                        <div class="signup-login-buttons">
+                            <button type="submit" class="signup-btn col-50">Sign up</button>
+                            <button id="loginSwitch" class="login-btn col-50 switch-selected">Log in</button>
+                        </div>
+                    </fieldset>
+                </form>
+                <div class="site-features">
+                    <p>Features... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde quis, officia omnis quidem quos
+                        excepturi neque laboriosam doloremque quia. Vitae earum ea similique ex expedita sunt unde sint, ut itaque
+                        tempore in asperiores tempora. Autem magnam dolores laborum nulla facere sit fugit nisi! Dignissimos, quis
+                        similique alias ut aut repellat.</p>
                 </div>
-            </section>
-            <section class="site-features-section row">
-                <div class="site-features col-100">
-                    <p>Features... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde quis, officia omnis quidem quos excepturi neque laboriosam doloremque quia. Vitae earum ea similique ex expedita sunt unde sint, ut itaque tempore in asperiores tempora. Autem magnam dolores laborum nulla facere sit fugit nisi! Dignissimos, quis similique alias ut aut repellat.</p>
-                </div>
-            </section>
+            </div>
         </main>
-        <!-- Landing Page 2 (to be removed, for styling only) -->
-        <main role="main" id="landingPage" class="">
-            <section class="signup-login-section row">
-                <div class="landing-img col-66">
-                    <h1>Hire Me Faster</h1>
-                </div>
-                <div class="signup-login-box col-33">
-                    <div class="form-switch-box row">
-                        <button id="signupSwitch" class="col-50">Sign up</button>
-                        <button id="loginSwitch" class="col-50 switch-selected">Log in</button>
-                    </div>
-                    <form id="signupForm" class="signup-form hidden">
-                        <fieldset name="signup-fieldset">
-                            <legend>Get hired faster</legend>
-                            <label for="signupUsername">
-                                <input id="signupUsername" type="text" placeholder="Username" pattern="[a-z0-9]+" maxlength="15"
-                                    oninvalid="this.setCustomValidity('Uppercase letters, spaces, and symbols are invalid.')"
-                                    oninput="this.setCustomValidity('')" required>
-                            </label>
+        <!-- Landing Page Duplicate (to be removed, for styling login box only) -->
+        <main role="main" id="landingPage" class="row">
+            <div class="landing-img col-60">
+                <h1>Hire Me Faster</h1>
+            </div>
+            <div class="signup-login-box col-40">
+                <form id="signupForm" class="signup-form hidden">
+                    <fieldset name="signup-fieldset">
+                        <legend>Get Hired Faster</legend>
+                        <label for="signupUsername">
+                            <input id="signupUsername" type="text" placeholder="Username" pattern="[a-z0-9]+" maxlength="15"
+                                oninvalid="this.setCustomValidity('Uppercase letters, spaces, and symbols are invalid.')"
+                                oninput="this.setCustomValidity('')" required>
+                        </label>
         
-                            <label for="signupPassword">
-                                <input id="signupPassword" type="password" placeholder="Password" pattern="[a-z0-9]+"
-                                    maxlength="15"
-                                    oninvalid="this.setCustomValidity('Uppercase letters, spaces, and symbols are invalid.')"
-                                    oninput="this.setCustomValidity('')" required>
-                            </label>
+                        <label for="signupPassword">
+                            <input id="signupPassword" type="password" placeholder="Password" pattern="[a-z0-9]+" maxlength="15"
+                                oninvalid="this.setCustomValidity('Uppercase letters, spaces, and symbols are invalid.')"
+                                oninput="this.setCustomValidity('')" required>
+                        </label>
         
-                            <label for="signupPasswordConfirm">
-                                <input id="signupPasswordConfirm" type="password" placeholder="Confirm password"
-                                    pattern="[a-z0-9]+" maxlength="15" required>
-                            </label>
+                        <label for="signupPasswordConfirm">
+                            <input id="signupPasswordConfirm" type="password" placeholder="Confirm password" pattern="[a-z0-9]+"
+                                maxlength="15" required>
+                        </label>
         
-                            <button type="submit">Sign up</button>
-                        </fieldset>
-                    </form>
-                    <form id="loginForm" class="login-form">
-                        <fieldset name="login-fieldset">
-                            <legend>Welcome back</legend>
-                            <label for="loginUsername">
-                                <input id="loginUsername" type="text" placeholder="Username" pattern="[a-z0-9]+" maxlength="15"
-                                    oninvalid="this.setCustomValidity('Uppercase letters, spaces, and symbols are invalid.')"
-                                    oninput="this.setCustomValidity('')" required>
-                            </label>
+                        <div class="signup-login-buttons">
+                            <button type="submit" class="signup-btn col-50 switch-selected">Sign up</button>
+                            <button id="loginSwitch" class="login-btn col-50">Log in</button>
+                        </div>
+                    </fieldset>
+                </form>
+                <form id="loginForm" class="login-form">
+                    <fieldset name="login-fieldset">
+                        <legend>Welcome Back</legend>
+                        <label for="loginUsername">
+                            <input id="loginUsername" type="text" placeholder="Username" pattern="[a-z0-9]+" maxlength="15"
+                                oninvalid="this.setCustomValidity('Uppercase letters, spaces, and symbols are invalid.')"
+                                oninput="this.setCustomValidity('')" required>
+                        </label>
         
-                            <label for="loginPassword">
-                                <input id="loginPassword" type="password" placeholder="Password" pattern="[a-z0-9]+"
-                                    maxlength="15"
-                                    oninvalid="this.setCustomValidity('Uppercase letters, spaces, and symbols are invalid.')"
-                                    oninput="this.setCustomValidity('')" required>
-                            </label>
+                        <label for="loginPassword">
+                            <input id="loginPassword" type="password" placeholder="Password" pattern="[a-z0-9]+" maxlength="15"
+                                oninvalid="this.setCustomValidity('Uppercase letters, spaces, and symbols are invalid.')"
+                                oninput="this.setCustomValidity('')" required>
+                        </label>
         
-                            <button type="submit">Log in</button>
-                        </fieldset>
-                    </form>
-                </div>
-            </section>
-            <section class="site-features-section row">
-                <div class="site-features col-100">
+                        <div class="signup-login-buttons">
+                            <button type="submit" class="signup-btn col-50">Sign up</button>
+                            <button id="loginSwitch" class="login-btn col-50 switch-selected">Log in</button>
+                        </div>
+                    </fieldset>
+                </form>
+                <div class="site-features">
                     <p>Features... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde quis, officia omnis quidem
-                        quos excepturi neque laboriosam doloremque quia. Vitae earum ea similique ex expedita sunt unde sint, ut
-                        itaque tempore in asperiores tempora. Autem magnam dolores laborum nulla facere sit fugit nisi!
-                        Dignissimos, quis similique alias ut aut repellat.</p>
+                        quos
+                        excepturi neque laboriosam doloremque quia. Vitae earum ea similique ex expedita sunt unde sint, ut
+                        itaque
+                        tempore in asperiores tempora. Autem magnam dolores laborum nulla facere sit fugit nisi! Dignissimos,
+                        quis
+                        similique alias ut aut repellat.</p>
                 </div>
-            </section>
+            </div>
         </main>
         <!-- Dashboard Page -->
         <main role="main" id="dashboardPage" class="row">
