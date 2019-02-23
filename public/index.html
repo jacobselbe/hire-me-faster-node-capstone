@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="grid.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="styles/grid.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
 </head>
 <body>
     <!-- Landing Page -->
@@ -122,7 +122,11 @@
         </div>
     </main>
     <!-- Dashboard Page -->
-    
+    <main role="main" id="dashboardPage" class="row">
+        <section id="calendar" class="calendar col-90">
+            
+        </section>
+    </main>
     <footer role="contentinfo" class="row">
         <div class="contact-box">
             <p class="col-50">© Copyright 2019 Jacob Selbe</p>
@@ -132,8 +136,11 @@
             </div>
         </div>
     </footer>
+    <script src="https://moment.github.io/luxon/global/luxon.min.js"></script>
+    <script
+        src="https://cdn.polyfill.io/v2/polyfill.js?features=default,String.prototype.repeat,Array.prototype.find,Array.prototype.findIndex,Math.trunc,Math.sign"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
-    <!-- <script src="client.js"></script> -->
+    <script src="client.js"></script>
 </body>
 </html>

@@ -31,7 +31,7 @@ li {
     height: 100%;
     background: 
         linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-        url(job-collab.jpg);
+        url(../images/job-collab.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -119,6 +119,17 @@ h1 {
     margin-top: 9%;
     line-height: 150%;
 }
+
+.calendar {
+    margin: 5%;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
+
+
+
 
 footer {
     background-color: #c8c8c7;

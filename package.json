@@ -13,8 +13,9 @@
     "chai-http": "^4.2.1",
     "express": "^4.16.4",
     "googleapis": "^27.0.0",
+    "luxon": "^1.11.3",
     "mocha": "^5.2.0",
-    "mongoose": "^5.4.14",
+    "mongoose": "^5.4.15",
     "morgan": "^1.9.1",
     "uuid": "^3.3.2"
   }

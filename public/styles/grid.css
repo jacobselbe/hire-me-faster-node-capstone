@@ -22,7 +22,7 @@
     width: 50%;
 }
 
-.col-100, .col-33, .col-66, .col-20, .col-80, .col-60, .col-40 {
+.col-100, .col-33, .col-66, .col-20, .col-80, .col-60, .col-40, .col-90 {
     float: left;
     width: 100%;
     /* padding-left: 1.04166666%;
@@ -54,5 +54,9 @@
 
     .col-40 {
         width: 40%;
+    }
+
+    .col-90 {
+        width: 90%;
     }
 }
