@@ -128,17 +128,42 @@ h1 {
 .calendar-section {
     height: 40%;
     text-align: center;
+    color: white;
 }
 
 .week-selector {
-    display: inline-block;
     width: 20%;
-    color: white;
-    font-size: 30px;
+    font-size: 25px;
+    padding: 1%;
 }
 
 .week-selector i {
     padding: 1%;
+}
+
+.calendar-box {
+    width: 95%;
+}
+
+.calendar-box ul {
+    padding: 0;
+    margin: 0;
+}
+
+.calendar-box li {
+    float: left;
+    width: 14.285714%;
+    border: 1px solid white;
+}
+
+.week-days li {
+    padding: 6px;
+    font-size: 20px;
+}
+
+.day-boxes li {
+    padding: 5px;
+    height: 180px;
 }
 
 

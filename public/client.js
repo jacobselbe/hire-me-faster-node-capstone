@@ -10,7 +10,7 @@ const month = now //.something
 const year = now //.something
 
 function showDate() {
-    $('#calendarBox').html(now.toLocaleString());
+    
 }
 
 // function showLandingPage() {
