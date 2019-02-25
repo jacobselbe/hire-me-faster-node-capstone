@@ -22,7 +22,7 @@
     width: 50%;
 }
 
-.col-10, .col-25, .col-40, .col-60, .col-75 .col-80 {
+.col-10, .col-25, .col-40, .col-60, .col-75, .col-80 {
     float: left;
     width: 100%;
     padding-left: 1.04166666%;

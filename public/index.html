@@ -155,29 +155,30 @@
                     </ul>
                 </div>
             </div>
-            <div id="taskBox" class="task-box col-75">
-                <div id="tasksOverview" class="tasks-overview">
-                    
-                </div>
-                <div id="logTask" class="log-task">
-                    <form id="taskForm">
-                        <fieldset name="task">
-                            <legend>
-                                <h2>New Job Application</h2>
-                            </legend>
-                            <label for="taskTitle">Company Name</label>
-                            <input id="taskTitle" type="text">
-                    
-                            <label for="jobDescription">Job Details</label>
-                            <textarea name="job-description" id="jobDescription"></textarea>
-                    
-                            <label for="notes">Notes</label>
-                            <textarea name="task-notes" id="notes"></textarea>
-                    
-                            <button type="submit">Application Completed</button>
-                        </fieldset>
-                    </form>
-                </div>
+            <div id="tasksOverview" class="tasks-overview col-75 hidden">
+                
+            </div>
+            <div id="logTask" class="log-task col-75">
+                <form id="newApplicationForm" class="new-application-form">
+                    <fieldset name="task">
+                        <legend>
+                            <h2>New Job Application</h2>
+                        </legend>
+                        <label for="taskTitle">
+                            <input id="taskTitle" type="text" placeholder="Company Name" maxlength="30" required>
+                        </label>
+                
+                        <label for="jobDescription">
+                            <textarea name="job-description" id="jobDescription" placeholder="Job Details" maxlength="30" required></textarea>
+                        </label>
+                
+                        <label for="notes">
+                            <textarea name="task-notes" id="notes" placeholder="Notes" maxlength="30" required></textarea>
+                        </label>
+                
+                        <button type="submit">Application Completed</button>
+                    </fieldset>
+                </form>
             </div>
         </section>
         <section id="calendarSection" class="calendar-section row">
