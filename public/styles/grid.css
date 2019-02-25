@@ -25,9 +25,18 @@
 .col-10, .col-25, .col-40, .col-60, .col-75 .col-80 {
     float: left;
     width: 100%;
+    padding-left: 1.04166666%;
+    padding-right: 1.04166666%;
+    padding-bottom: 2.08333333%;
 }
 
 @media only screen and (min-width: 640px){
+
+    .col-10, .col-25, .col-40, .col-60, .col-75 .col-80 {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
     
     .col-10 {
         width: 10%;
