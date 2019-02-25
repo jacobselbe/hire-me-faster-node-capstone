@@ -19,6 +19,11 @@ main {
     width: 100%;
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+}
+
 li {
     list-style: none;
 }
@@ -120,9 +125,53 @@ h1 {
     line-height: 150%;
 }
 
-.task-email-section {
+.task-section {
     height: 60%;
-    border: 1px solid white; /*remove this*/
+    width: 95%;
+    padding-top: 20px;
+}
+
+.task-list-box {
+    height: 100%;
+    border: 2px solid white;
+    border-radius: 3px;
+    text-align: center;
+    color: white;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+.task-list-box h2 {
+    width: 80%;
+    margin-left: 10%;
+    margin-left: 10%;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+
+.task-list-box li {
+    width: 80%;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: 23px;
+    border-radius: 2px;
+    background-color: #c8c8c7;
+    color: #232d36;
+}
+
+.menu-list li:hover {
+    border: 1px solid white;
+}
+
+li.task-list:hover {
+    border: 1px solid #05386b;
+    border-bottom: 1px solid white;
+}
+
+li.active-tab {
+    background-color: #074b8f;
+    border: 1px solid #05386b;
+    border-bottom: 1px solid white;
 }
 
 .calendar-section {
@@ -145,11 +194,6 @@ h1 {
     width: 95%;
 }
 
-.calendar-box ul {
-    padding: 0;
-    margin: 0;
-}
-
 .calendar-box li {
     float: left;
     width: 14.285714%;
@@ -165,6 +209,7 @@ h1 {
     padding: 5px;
     height: 180px;
 }
+
 
 
 

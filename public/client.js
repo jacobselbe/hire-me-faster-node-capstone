@@ -13,6 +13,8 @@ function showDate() {
     
 }
 
+//get after task submit to renew task overview
+
 // function showLandingPage() {
 //     $('#signupUsername').val('');
 //     $('#signupPassword').val('');

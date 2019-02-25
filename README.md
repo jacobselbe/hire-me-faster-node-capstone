@@ -73,9 +73,11 @@ This app is built to be responsive to smaller screen sizes using a float-grid cs
 
 
 ## Development Road Map
-Features for future iterations include: 
-1. Integration of Indeed API allowing
+Features for future iterations include:
+1. Email functionality
+    * Integration of Google Sign-In
+    * Integration of Gmail Api
+2. Integration of Indeed API allowing
     * Resume builder
     * Direct apply to job postings
-2. More robust email functionality
 3. More detailed and insightful statistics
