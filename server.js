@@ -2,6 +2,7 @@
 
 const express = require('express');
 const morgan = require('morgan');
+const bcrypt = require('bcryptjs');
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
@@ -37,30 +38,42 @@ app.get('/users/:id', (req, res) => {
         });
 });
 
-app.post('/users', (req, res) => {
-    const requiredFields = ['username', 'password'];
-    for (let i = 0; i < requiredFields.length; i++) {
-        const field = requiredFields[i];
-        if (!(field in req.body)) {
-            const message = `Missing \`${field}\` in request body`;
-            console.error(message);
-            return res.status(400).send(message);
+app.post('/users/create', (req, res) => {
+    console.log(req.body);
+    
+    let username = req.body.username;
+    let password = req.body.password;
+    password = password.trim();
+    bcrypt.genSalt(10, (err, salt) => {
+        if (err) {
+            return res.status(500).json({
+                message: 'Internal server error on genSalt'
+            });
         }
-    }
 
-    User
-        .create({
-            username: req.body.username,
-            password: req.body.password,
-            created: req.body.created,
-            applications: req.body.applications
-        })
-        .then(user => res.status(201).json(user.serialize()))
-        .catch(err => {
-            console.error(err);
-            res.status(500).json({ error: 'Something went wrong' });
+        bcrypt.hash(password, salt, (err, hash) => {
+            if (err) {
+                return res.status(500).json({
+                    message: 'Internal server error on hash'
+                });
+            }
+
+            User.create({
+                username,
+                password: hash
+            }, (err, item) => {
+                if (err) {
+                    return res.status(500).json({
+                        message: 'Internal Error on Create User'
+                    });
+                }
+                if (item) {
+                    console.log(`New user with username ${username} was created`);
+                    return res.status(200).json(item);
+                }
+            });
         });
-
+    });
 });
 
 app.delete('/users/:id', (req, res) => {

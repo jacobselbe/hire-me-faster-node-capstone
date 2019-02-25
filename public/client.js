@@ -1,17 +1,17 @@
 'use strict';
 
-const dateTime = luxon.DateTime;
-const now = dateTime.local();
+// const dateTime = luxon.DateTime;
+// const now = dateTime.local();
 
-const today = now //.something
-const day = now //.something
-const week = now //.something
-const month = now //.something
-const year = now //.something
+// const today = now //.something
+// const day = now //.something
+// const week = now //.something
+// const month = now //.something
+// const year = now //.something
 
-function showDate() {
+// function showDate() {
     
-}
+// }
 
 //get after task submit to renew task overview
 
@@ -120,15 +120,69 @@ function showDate() {
 //     });
 // }
 
-// function postNewUser(username, password) {
-//     //post new user to db
-// }
+function loginUser(username, password) {
+    const loginUserObject = {
+        username: username,
+        password: password
+    };
+    $.ajax({
+        type: 'POST',
+        url: '/users/login',
+        dataType: 'json',
+        data: JSON.stringify(loginUserObject),
+        contentType: 'application/json'
+    })
+        .done(function (result) {
+            // $('.js-signin-success').html('Thanks for signing up! Please sign in.');
+            // $('.js-signin-success').addClass('change-status-success');
+            // showLogInScreen();
+            console.log(result);
+        })
+        .fail(function (jqXHR, error, errorThrown) {
+            console.log(jqXHR);
+            console.log(error);
+            console.log(errorThrown);
+        });
 
-// function getUserData() {
-//     //get user data with authentication
-//     //return ??
-// }
+}
 
-// $(showLandingPage());
+function postNewUser(username, password) {
+    const newUserObject = {
+        username: username,
+        password: password
+    };
+    console.log(newUserObject);
+    
 
-$(showDate());
+    // !!! look into ajax call problem (need to npm install ajax?) and pepper in console logs everywhere !!!
+
+
+    $.ajax({
+        type: 'POST',
+        url: '/users/create',
+        dataType: 'json',
+        data: JSON.stringify(newUserObject),
+        contentType: 'application/json'
+    })
+        .done(function (result) {
+            // $('.js-signin-success').html('Thanks for signing up! Please sign in.');
+            // $('.js-signin-success').addClass('change-status-success');
+            // showLogInScreen();
+            console.log(result);
+        })
+        .fail(function (jqXHR, error, errorThrown) {
+            console.log(jqXHR);
+            console.log(error);
+            console.log(errorThrown);
+        });
+
+}
+
+function getUserData() {
+    //get user data with authentication
+    //return ??
+}
+
+$(showLandingPage());
+
+// $(showDate());
