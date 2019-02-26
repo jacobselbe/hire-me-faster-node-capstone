@@ -1,3 +1,11 @@
+:root {
+  --purple: #383544;
+  --dark-gray: #7a8385;
+  --light-gray: #c8c8c7;
+  --clear-gray: #7a838583;
+  --dark-text: #232d36;
+}
+
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
@@ -11,7 +19,7 @@ html, body {
 }
 
 body {
-    background-color: #383544;
+    background-color: var(--purple);
 }
 
 main {
@@ -26,6 +34,10 @@ ul {
 
 li {
     list-style: none;
+}
+
+button, button:hover {
+    transition: 0.15s;
 }
 
 .hidden {
@@ -70,8 +82,8 @@ fieldset {
 .signup-login-box input {
     border: none;
     border-radius: 2px;
-    background-color: #c8c8c7;
-    color: #232d36;
+    background-color: var(--light-gray);
+    color: var(--dark-text);
     width: 90%;
     margin: 2%;
     margin-left: 5%;
@@ -91,7 +103,7 @@ fieldset {
 
 .signup-login-box button {
     border: none;
-    background-color: #7a838583;
+    background-color: var(--clear-gray);
     color: white;
     display: block;
     font-size: 20px;
@@ -107,13 +119,12 @@ fieldset {
 }
 
 .signup-login-box button.switch-selected {
-    background-color: #7a8385;
+    background-color: var(--dark-gray);
 }
 
 .signup-login-box button:hover {
-    background-color: #c8c8c7;
-    color: #232d36;
-    transition: 0.15s;
+    background-color: var(--light-gray);
+    color: var(--dark-text);
 }
 
 .site-features {
@@ -140,19 +151,19 @@ fieldset {
 
 .title-box {
     height: 13%;
-    padding: 4%;
-    background-color: #7a8385;
+    background-color: var(--dark-gray);
     border-radius: 2px;
 }
 
 .title-box h2 {
+    color: white;
     font-size: 30px;
-    padding: 0;
+    padding-top: 4%;
     margin: 0;
 }
 
 .task-log-box {
-    background-color: #7a838583;
+    background-color: var(--clear-gray);
     border: 2px solid #7a838500;
     border-radius: 2px;
     height: 82%;
@@ -170,19 +181,15 @@ fieldset {
     padding: 5px;
     font-size: 22px;
     border-radius: 2px;
-    background-color: #c8c8c7;
-    color: #232d36;
+    background-color: var(--light-gray);
+    color: var(--dark-text);
+    transition: 0.15s;
 }
 
 .task-log-box li:hover {
-    width: 85%;
-    margin-left: 7.5%;
-    margin-right: 7.5%;
-    padding: 7px;
-    margin-top: -2px;
-    margin-bottom: -2px;
-    font-size: 22px;
+    transform: scale(1.05);
     filter: brightness(115%);
+    transition: 0.1s;
 }
 
 .task-log-box li.active-log {
@@ -192,7 +199,7 @@ fieldset {
     padding: 10px;
     margin-top: 8px;
     margin-bottom: 8px;
-    font-size: 23px;
+    font-size: 24px;
     filter: brightness(130%);
 }
 
@@ -201,33 +208,20 @@ fieldset {
 
 
 
-
-    
-    
-
-
-.new-application-form legend {
+.log-task {
+    height: 100%;
     text-align: center;
-    padding: 1.2%;
-    margin: 0;
-    color: white;
-    background-color: #7a8385;
-    border-radius: 2px;
-    width: 100%;
-    height: 13%;
 }
 
-.new-application-form h2 {
-    padding: 0;
-    margin: 0;
-    font-size: 30px;
+.new-application-form {
+    margin-top: -1%;
 }
 
 .new-application-form input, textarea {
     border: none;
     border-radius: 2px;
-    background-color: #c8c8c7;
-    color: #232d36;
+    background-color: var(--light-gray);
+    color: var(--dark-text);
     width: 98%;
     margin: 1%;
     padding: 10px;
@@ -236,7 +230,7 @@ fieldset {
 }
 
 .new-application-form textarea {
-    height: 100px;
+    height: 140px;
 }
 
 ::placeholder {
@@ -245,17 +239,19 @@ fieldset {
 
 .new-application-form button {
     border: none;
-    background-color: #7a838583;
-    color: white;
-    display: block;
+    border-radius: 2px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 1%;
     font-size: 20px;
-    padding: 3%;
+    background-color: var(--dark-gray);
+    color: white;
 }
 
 .new-application-form button:hover {
-    background-color: #c8c8c7;
-    color: #232d36;
-    transition: 0.15s;
+    background-color: var(--light-gray);
+    color: var(--dark-text);
 }
 
 
@@ -294,7 +290,7 @@ fieldset {
 
 .calendar-box {
     width: 95%;
-    border: 0.5px solid #c8c8c7;
+    border: 0.5px solid var(--light-gray);
 }
 
 .calendar-box li {
@@ -305,15 +301,15 @@ fieldset {
 .week-days li {
     padding: 6px;
     font-size: 20px;
-    background-color: #c8c8c7;
-    color: #232d36;
+    background-color: var(--light-gray);
+    color: var(--dark-text);
 }
 
 .day-date {
     text-align: center;
     float: right;
     clear: both;
-    background-color: #232d36;
+    background-color: var(--purple);
     height: 28px;
     width: 28px;
     border-radius: 50%;
@@ -329,12 +325,12 @@ fieldset {
 .day-boxes li {
     padding: 5px;
     height: 180px;
-    border: 0.5px solid #c8c8c7;
-    background-color: #7a838583;
+    border: 0.5px solid var(--light-gray);
+    background-color: var(--clear-gray);
 }
 
 footer {
-    background-color: #c8c8c7;
+    background-color: var(--light-gray);
     text-align: center;
 }
 
@@ -345,7 +341,7 @@ footer {
 
 .contact-box p {
     float: left;
-    color: #232d36;
+    color: var(--dark-text);
     padding: 0;
     border: 0;
     margin-top: 12px;
@@ -358,7 +354,7 @@ footer {
 }
 
 .contact-links i {
-    color: #383544;
+    color: var(--purple);
     font-size: 30px;
     margin-top: 6px;
     margin-bottom: 5px;
