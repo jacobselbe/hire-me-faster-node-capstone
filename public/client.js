@@ -1,5 +1,24 @@
 'use strict';
 
+/*
+Job Leads
+    view scrollable list of all completed job applications
+    displays company name and date logged
+    when clicked shows detail
+        must display company name, job details, and notes
+        must give user ability to edit notes
+        must display date logged
+        must display follow ups logged with that job
+*/
+
+/* 
+Calendar
+    displays number of tasks completed each day
+    when clicked shows detail
+        displays job leads completed that day in same display/stlye as above
+        with the ability to view them in detail in same display/stlye as above
+*/
+
 // const dateTime = luxon.DateTime;
 // const now = dateTime.local();
 

@@ -9,11 +9,12 @@
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
 
 html, body {
-    margin: 0;
-    padding: 0;
     width: 100%;
     height: 100%;
 }
@@ -60,13 +61,7 @@ h1 {
     text-shadow: 6px 6px 15px black;
     font-size: 130px;
     text-align: center;
-    margin-top: 20%;
-}
-
-fieldset {
-    margin: 0;
-    padding: 0;
-    border: none;
+    padding-top: 20%;
 }
 
 .signup-login-box legend {
@@ -80,7 +75,6 @@ fieldset {
 }
 
 .signup-login-box input {
-    border: none;
     border-radius: 2px;
     background-color: var(--light-gray);
     color: var(--dark-text);
@@ -139,34 +133,35 @@ fieldset {
 .task-section {
     height: 60%;
     width: 95%;
-    padding-top: 20px;
+    padding-top: 5%;
 }
 
 .task-list-box {
     height: 100%;
     text-align: center;
     color: white;
-    border-radius: 2px;
+    /* border-radius: 2px; */
 }
 
 .title-box {
     height: 13%;
     background-color: var(--dark-gray);
-    border-radius: 2px;
+    /* border-radius: 2px; */
 }
 
 .title-box h2 {
     color: white;
     font-size: 30px;
-    padding-top: 4%;
+    padding-top: 3%;
     margin: 0;
 }
 
 .task-log-box {
     background-color: var(--clear-gray);
-    border: 2px solid #7a838500;
-    border-radius: 2px;
-    height: 82%;
+    /* border: 2px solid #7a838500; */
+    border: 0;
+    /* border-radius: 2px; */
+    height: 83%;
     margin-top: 5%;
     padding-top: 1%;
     overflow-x: auto;
@@ -208,29 +203,125 @@ fieldset {
 
 
 
+
+
+
+
+
+/*
+Job Leads
+    view scrollable list of all completed job applications
+    displays company name and date logged
+    when clicked shows detail
+        must display company name, job details, and notes
+        must give user ability to edit notes
+        must display date logged
+        must display follow ups logged with that job
+*/
+
+/* !!!create transitions between hidden boxes and hidden main pages!!! */
+
+/* add nav bar to top of dash page with logout button */
+
+/* finish footer */
+
+/* consider adding back button to applicable views */
+
+
+
+
+
+.job-leads {
+    height: 100%;
+    color: white;
+}
+
+.job-leads-title {
+    background-color: var(--dark-gray);
+    height: 9%;
+    padding: 0.7%;
+    padding-left: 1.4%;
+    border-radius: 2px 2px 0 0;
+}
+
+.job-leads-title h3{
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+}
+
+.job-list-box {
+    height: 91%;
+    background-color: var(--clear-gray);
+    /* border-radius: 0 0 2px 2px; */
+}
+
+.job-list-box p {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10%;
+}
+
+.job-lead-list li {
+
+}
+
+.job-list-box li {
+    /* border: 1px solid white; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.job-lead-detail {
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .log-task {
     height: 100%;
     text-align: center;
+    border: 1px solid white;
 }
 
-.new-application-form {
-    margin-top: -1%;
-}
-
-.new-application-form input, textarea {
+.new-application-form input, .new-application-form textarea {
     border: none;
     border-radius: 2px;
     background-color: var(--light-gray);
     color: var(--dark-text);
-    width: 98%;
-    margin: 1%;
+    width: 95%;
+    margin-bottom: 2%;
     padding: 10px;
     padding-left: 15px;
     font-size: 18px;
 }
 
 .new-application-form textarea {
-    height: 140px;
+    height: 120px;
 }
 
 ::placeholder {
@@ -243,7 +334,6 @@ fieldset {
     padding: 10px;
     padding-left: 30px;
     padding-right: 30px;
-    margin-top: 1%;
     font-size: 20px;
     background-color: var(--dark-gray);
     color: white;
@@ -254,18 +344,37 @@ fieldset {
     color: var(--dark-text);
 }
 
+.followup-email {
+    height: 100%;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
 
+.email-template {
+    text-align: left;
+    background-color: var(--clear-gray);
+    border-radius: 2px;
+    font-size: 20px;
+    padding: 3%;
+    margin-top: 3.2%;
+    margin-bottom: 3.2%;
+}
 
+.followup-email button {
+    border: none;
+    border-radius: 2px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+    background-color: var(--light-gray);
+    color: var(--dark-text);
+}
 
-
-
-
-
-
-
-
-
-
+.followup-email button:hover {
+    filter: brightness(130%);
+}
 
 .calendar-section {
     height: 40%;
@@ -327,6 +436,12 @@ fieldset {
     height: 180px;
     border: 0.5px solid var(--light-gray);
     background-color: var(--clear-gray);
+    transition: 0.15s;
+}
+
+.day-boxes li:hover {
+    background-color: #7a83854d;
+    transition: 0.15s;
 }
 
 footer {
