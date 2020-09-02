@@ -13,7 +13,7 @@
     "chai": "^4.2.0",
     "chai-http": "^4.2.1",
     "express": "^4.16.4",
-    "googleapis": "^27.0.0",
+    "googleapis": "^39.1.0",
     "luxon": "^1.11.3",
     "mocha": "^5.2.0",
     "mongoose": "^5.4.15",
